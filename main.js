@@ -50,6 +50,14 @@ function initializeAfterScrollToTop() {
     }
   });
 
+  // Generate grid boxes 
+const gridWrapper = document.querySelector('.background-grid_box-wrapper');
+for(let i = 0; i < 206; i++) {
+  const box = document.createElement('div');
+  box.className = 'background-grid_box';
+  gridWrapper.appendChild(box);
+}
+
   const scrollHandler = function() {
     const scrollPosition = window.scrollY;
     
