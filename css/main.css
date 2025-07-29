@@ -865,7 +865,7 @@
 	opacity: 0;
 	width: 100%;
 	outline-offset: 0px;
-	background-color: rgba(82, 82, 82, 0.1);
+	    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #3586ff26, #0000 80%);
 	text-align: center;
 	outline: 1px solid rgba(255, 255, 255, 0.2);
 	flex-direction: column;
@@ -895,20 +895,12 @@
   }
   
   .perks_item::before {
-	background: radial-gradient(
-	  800px circle at var(--mouse-x) var(--mouse-y), 
-	  rgba(82, 82, 82, 0.06),
-	  transparent 40%
-	);
+	background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), #5252520f, #0000 40%);
 	z-index: 3;
   }
   
   .perks_item::after {  
-	background: radial-gradient(
-	  600px circle at var(--mouse-x) var(--mouse-y), 
-	  rgba(82, 82, 82, 0.4),
-	  transparent 40%
-	);
+	background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), #52525266, #0000 40%);
 	z-index: 1;
   }
   .perks_item > .card-content {
